@@ -1,0 +1,143 @@
+.main-page-3 {
+    margin-bottom: 100px;
+    .block-info-page-3-1 .item {
+        .image {
+            margin-bottom: 20px;
+        }
+        h3.title {
+            margin-bottom: 20px;
+        }
+        h5 {
+            margin-top: 20px;
+            font-weight: 400;
+            font-size: 1.1rem;
+        }
+        p {
+            font-weight: 300;
+        }
+    }
+}
+//page 3.2
+.main-page-3-2 {
+    .block-info-ceo {
+        top: 66px; 
+        width: 100vw;
+        position: relative;
+        margin-left: -50vw;
+        left: 50%;
+        margin-bottom: 150px;
+        background-color: #f8f8f8;
+        .inner-info-ceo {
+            max-width: 980px;
+            position: relative;
+            margin: 0 auto;
+            padding-top: 60px;
+            .info-left {
+                margin-right: 300px;
+            }
+            .info-right img {
+                max-width: 300px;
+                margin-top: -209px;
+            }
+        }
+    }
+    .desc-info {
+        font-weight: 300;
+    }
+}
+
+//page 3.3
+.main-page-3-3 {
+    .desc-color {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 100px;
+        li {
+            .image {
+                margin-bottom: 30px;
+                position: relative;
+            }
+            &:first-child {
+                .image {
+                    right: -40px;
+                }
+                .desc {
+                    padding-left: 65px;
+                }
+            }
+            
+            &:nth-child(3) .image {
+                position: relative;
+                left: -40px;
+            }
+        }
+    }
+}
+// Page3-4
+.list-product {
+    ul.nav {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: space-around;
+        border-bottom: 0;
+        margin-bottom: 50px;
+        li {
+            text-align: center;
+            a {
+                color: #898989;
+                border: 0;
+                border-radius: 0;
+            }
+        }
+    }
+    .item-product {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        > div {
+            padding: 0;
+        }
+    }
+}
+//Page 3-5
+.main-page-3-5 {
+    h4.title {
+        margin-bottom: 40px;
+    }
+    .block-require {
+        h5.title {
+            margin-top: 40px;
+        }
+        .info-require{
+            margin-bottom: 30px;
+            margin-top: 20px;
+            .col-sm-6 {
+                display: flex;
+                .inner {
+                    background-color: #f4f4f4;
+                    padding: 30px;
+                    width: 100%;
+                }
+            }
+        } 
+         
+        
+    }
+}
+//Page 3-6
+.main-page-3-6 {
+    .desc-contact {
+        margin-bottom: 50px;
+        margin-top: 20px;
+        p {
+            margin-bottom: 5px;
+        }
+    }
+    .desc-info {
+        p {
+            font-weight: 300;
+        }
+    }
+}

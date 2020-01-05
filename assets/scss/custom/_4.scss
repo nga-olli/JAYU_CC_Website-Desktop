@@ -1,0 +1,93 @@
+.block-hold {
+    margin-bottom: 100px;
+    .block-hold-top {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        font-size: 20px;
+        .hold-right {
+            display: flex;
+            display: -webkit-flex;
+            .title {
+                text-transform: uppercase;
+                margin-left: 30px;
+            }
+        }
+    }
+    .block-hold-info {
+        display: flex;
+        margin-top: 30px;
+        ul li {
+            position: relative;
+            padding-left: 15px;
+            span {
+                float: right;
+            }
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 7px;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: #fff;
+                border: 1px solid #ddd;
+            }
+            &:first-child:before {
+                background-color: #781f2d;
+            }
+            &:nth-child(2):before {
+                background-color: #396d9b;
+            }
+            &:nth-child(4):before {
+                background-color: #dc7d38;
+            }
+            &:nth-child(5):before {
+                background-color: #e40e4e;
+            }
+            &.regular:before {
+                background-color: #fff !important;
+            }
+            &.ladies:before {
+                background-color: #e40e4e !important;
+            }
+        }
+    }
+    .block-hold-thumbnail {
+        margin-top: 30px;
+        ul {
+            display: flex;
+            li {
+                margin: 0 3px;
+                position: relative;   
+                .hover {
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    background-color: #00000091; 
+                    opacity: 0;
+                    &:before {
+                        content: '';
+                        background: url(../images/page-4/icon-zoom.png) no-repeat;
+                        background-position: center center;
+                        height: 33px;
+                        display: inline-block;
+                        background-size: contain;
+                        left: 0;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        margin: auto;
+                        position: absolute;
+                    }
+                }
+                &.active .hover, &:hover .hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

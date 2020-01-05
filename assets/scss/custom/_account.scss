@@ -1,0 +1,323 @@
+.tab-nav{
+  .right{
+    color: $color-black;
+    &.contact{
+      margin-right: 0;
+    }
+    &.active{
+      color: $color-gray-10;
+    }
+  }
+}
+.main-page-account{
+  .price{
+    font-weight: 500;
+    color: $color-gray-10;
+  }
+  .tab .title{
+    font-weight: 300;
+    margin-bottom: 34px;
+  }
+  .box{
+    font-weight: 300;
+    margin-bottom: 87px;
+    .items{
+      .item{
+        display: flex;
+        background-color: $color-white;
+        border-bottom: 1px solid #f2f2f2;
+        &:last-child{
+          border-bottom: 0;
+        }
+        .col{
+          width: 20%;
+          padding: 34px 20px;
+        }
+      }
+    }
+  }
+  .tab-edit-person .items .item{
+    border: 0;
+  }
+  .box{
+    span{
+      display: block;
+      font-size: 22px;
+      &:first-child{
+        margin-bottom: 14px;
+      }
+    }
+
+    .add,
+    .prepayment,
+    .cancel,
+    .change{
+      font-weight: 500;
+      font-size: 14px;
+    }
+    .add{
+      padding-left: 23px;
+      background: url("../images/icon-add.png") no-repeat left center;
+      background-size: 18px;
+    }
+    .prepayment{
+      padding-left: 23px;
+      background: url("../images/icon-prepayment.png") no-repeat left center;
+      background-size: 18px;
+    }
+    .change{
+      padding-left: 23px;
+      background: url("../images/icon-change.png") no-repeat left center;
+      background-size: 18px;
+    }
+    .cancel{
+      color: $color-red;
+    }
+  }
+  .text-bold{
+    font-weight: 400;
+  }
+}
+.tab-companion-registration{
+  background-color: $color-white;
+  padding: 30px 28px;
+  tr td{
+    vertical-align: top;
+    padding-bottom: 12px;
+  }
+  a{
+    border-bottom: 1px solid $color-black;
+  }
+  .col.action{
+    text-align: right;
+  }
+}
+.main-page-account{
+  .tab-nav{
+    border-bottom: 1px solid $color-black;
+    padding-bottom: 62px;
+    margin-bottom: 35px;
+  }
+  .tab-nav ul{
+    margin: 0;
+    padding-right: 0;
+  }
+}
+.tab-contact{
+  p{
+    font-size: 22px;
+    margin-bottom: 17px;
+  }
+  .block-contact{
+    display: flex;
+    padding: 100px 0 0;
+    text-align: center;
+    >div{
+      width: 50%;
+    }
+    p{
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 34px;
+      max-width: 285px;
+      margin: 0 auto 20px;
+    }
+  }
+  .title{
+    font-weight: 400;
+    font-size: 21px;
+    margin-bottom: 38px;
+  }
+  .icon{
+    width: 83px;
+    margin: 0 auto;
+    padding: 132px 0 33px;
+  }
+  body .alink{
+    border: 0;
+    font-size: 22px;
+    padding-right: 40px;
+    display: inline-block;
+    background: url("../images/next-yellow.png") no-repeat right center;
+    background-size: 18px;
+    font-size: 24px;
+  }
+}
+.form.contact{
+  background: $color-white;
+  text-align: left;
+  padding: 45px 40px;
+  .field{
+    border: 0;
+    margin-bottom: 35px;
+    &:last-child{
+      margin-bottom: 22px;
+    }
+  }
+  .label{
+    font-size: 20px;
+    margin-bottom: 17px;
+    display: block;
+  }
+  .input-text{
+    border: 1px solid #b8b8b8;
+    padding: 12px 21px 12px;
+  }
+  .action.submit{
+    cursor: pointer;
+    color: $color-red;
+    padding: 0 30px 0 0;
+    height: auto;
+    width: auto;
+    text-align: left;
+    display: inline-block;
+    background: url("../images/icon-completed.png") no-repeat right center;
+    background-size: 18px;
+    font-size: 24px;
+    border: 0;
+  }
+}
+.tab-edit-person{
+  .title{
+    margin-bottom: 85px;
+  }
+}
+
+.select-option{
+  select{
+    background: #fff url(../images/select-bg.png) no-repeat 100% 45%;
+    background-clip: padding-box;
+    background-size: 20px;
+    font-size: 16px;
+    padding: 3px 30px 4px 3px;
+    vertical-align: baseline;
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    outline: none;
+  }
+}
+select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-size: 30px 60px;
+  text-indent: .01em;
+}
+.select-custom{
+  background: #fff url(../images/select-custom.png) no-repeat 95% 21px;
+  background-size: 15px;
+  background-clip: padding-box;
+  padding: 3px 40px 4px 3px;
+  vertical-align: baseline;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #a9a9a9;
+  outline: none;
+  height: 51px;
+  border-radius: 0;
+  font-size: 20px;
+}
+.form.form-edit-person{
+  .fieldset{
+    border: 0;
+    margin-bottom: 50px;
+
+  }
+  .field{
+    border: 0;
+    display: flex;
+  }
+  .fieldset >.field{
+    margin-bottom: 20px;
+  }
+  .fieldset >.field{
+    &.no-control{
+      .label{
+          padding-top: 0;
+      }
+      .control{
+        padding-left: 20px;
+      }
+    }
+    >.label{
+      font-size: 16px;
+      width: 248px;
+      padding-top: 13px;
+    }
+    >.control{
+      min-height: 51px;
+      width: calc(100% - 248px);
+    }
+  }
+  .input-text{
+    border: 1px solid #a9a9a9;
+    padding: 12px 20px;
+    width: 435px;
+    font-size: 20px;
+  }
+  .field.col-1{
+    >div{
+      select{
+        width: 213px;
+      }
+    }
+  }
+  .field.col-3{
+    margin: 0 -4px;
+    >div{
+      width: 33.33%;
+      padding: 0 4px;
+    }
+    input{
+      width: 100%;
+    }
+  }
+  .field.col-2{
+    margin: 0 -4px;
+    >.control{
+      padding: 0 4px;
+    }
+  }
+  .col-2-select{
+    margin: 0 -4px;
+    >div{
+      padding: 0 4px;
+      &:first-child{
+        width: 33.33%;
+      }
+    }
+  }
+  .field-radio{
+    input{
+      margin-bottom: 14px;
+    }
+    .control{
+      margin-right: 33px;
+    }
+  }
+  .field-full{
+    margin-top: 20px;
+    .control,
+    input{
+      width: 100%;
+    }
+  }
+  .control .button{
+    background-color: #b5b5b5;
+    width: 213px;
+    height: 52px;
+    &:hover{
+      color: #b5b5b5;
+      border-color: #b5b5b5;
+      background-color: $color-white;
+    }
+  }
+  .actions-toolbar{
+    text-align: center;
+  }
+  .button.action.continue{
+      width: 150px;
+  }
+}

@@ -1,0 +1,34 @@
+.top{
+  position: relative;
+  .page-title{
+    padding-right: 100px;
+  }
+  .block-right{
+    position: absolute;
+    top: 16px;
+    right: 13px;
+  }
+  a{
+    display: inline-block;
+    vertical-align: top;
+    width: 20px;
+    margin-left: 12px;
+  }
+  .notification{
+    width: 23px;
+    position: relative;
+    .number{
+      background-color: $color-red;
+      color: $color-white;
+      font-size: 15px;
+      position: absolute;
+      top: -3px;
+      right: -9px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 20px;
+    }
+  }
+}

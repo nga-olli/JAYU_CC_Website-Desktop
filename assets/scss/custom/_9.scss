@@ -1,0 +1,53 @@
+.main-page-9 {
+    .notice-content {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 300px;
+        .btn-click {
+            position: absolute;
+            top: 76px;
+            z-index: 20;
+            right: 20px;
+            color: $color-gray-10;
+            &.active {
+                color: #fff;
+                .fa:before {
+                    content: "\f061";
+                }
+            }
+        }
+    }
+    .note-side-right {
+        overflow: hidden;
+        background: #2d2d2d;
+        z-index: 10;
+        height: 100vh;
+        color: #fff;
+        padding: 100px 20px 50px 20px;
+        font-size: 14px;
+        display: none;
+        float: right;
+        .btn-click {
+            position: absolute;
+            right: 30px;
+            .fa {
+                font-size: 22px;
+            }
+        }
+        .block-notice {
+            border-bottom: 1px solid #dddddd5e;
+            padding-top: 35px;
+            padding-bottom: 35px;
+            &:last-child {
+                border-bottom: 0;
+            }
+        }
+        p {
+            margin-bottom: 0;
+            .fa {
+                margin-right: 10px;
+            }
+        }
+    }
+}

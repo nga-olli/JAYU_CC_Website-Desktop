@@ -1,0 +1,206 @@
+.main-page-1 {
+    margin-bottom: 100px;
+
+    .inner-calendar {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .calendar__current {
+        position: relative;
+        padding: 20px 0;
+        border-bottom: 1px solid #000;
+        @include display-flex();
+        @include display-flex-between();
+        align-items: center;
+        -webkit-align-items: center;
+        margin-bottom: 50px;
+        h2 {
+        margin: 0;
+        }
+        .arrow-block a {
+            font-size: 30px;
+            margin-left: 5px;
+        }
+    }
+    
+    .calendar__date {
+        @include display-flex();
+        flex-flow: row wrap;
+        -webkit-flex-flow: row wrap;
+    }
+    
+    .calendar__day {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 25px;
+        font-weight: 600;
+        color: #262626;
+        width: 14%;
+        margin-bottom: 12px;
+        span {
+            width: 100%;
+        }
+        
+        &:first-child {
+        color: #ff685d;
+        }
+    }
+    
+    .calendar__number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row wrap;
+        -webkit-flex-flow: row wrap;
+        text-align: center;
+        padding: 10px 0;
+        color: #262626;
+        width: 14%;
+        span {
+            width: 100%;
+            &:first-child {
+                font-size: 25px;
+            }
+            &:last-child {
+                font-size: 14px;
+            }
+        }
+    
+        &.marked {
+        color: #ff685d;
+        }
+        &.passed {
+            opacity: 0.5;
+            pointer-events: none;
+            &.current {
+                border: 1px solid #ddd;
+            }
+        }
+        
+        &--current,
+        &:hover {
+        background-color: $color-black;
+        color: $color-gray-10;
+        font-weight: 700;
+        cursor: pointer;
+        }
+    }
+    .info-booking {
+        margin-top: 100px;
+        h5.title {
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 5px;
+        }
+    }
+    .inner-regulation-info {
+        border-top: 1px solid #000;
+        padding-top: 50px;
+        margin-top: 85px;
+        h5 {
+            margin-bottom: 40px;
+        }
+        &.info-booking-detail {
+            @include display-flex();
+            flex-flow: row wrap;
+            @include display-flex-between();
+            .info-in-out {
+                width: 47%;
+                h5 {
+                    margin-bottom: 20px;
+                }
+                ul {
+                    border-top: 1px solid #000;
+                    li {
+                        border-bottom: 1px solid $color-gray-3;
+                        padding: 10px;
+                        @include display-flex();
+                        @include display-flex-between();
+                        font-size: 16px;
+                        &.active {
+                            border: 1px solid $color-gray-10;
+                            margin-top: -1px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .info-confirm {
+        margin-top: 150px;
+        p {
+            margin-bottom: 5px;
+            &.phone-number {
+                display: inline-block;
+                border: 1px solid #ddd;
+                padding: 5px 10px;
+            }
+        }
+        .btn-confirm{
+            margin-top: 10px;
+            button {
+                display: inline-block;
+                background: $color-black;
+                color: $color-gray-10;
+                border-radius: 0;
+                &:hover {
+                    background: lighten($color-black, 10%);
+                }
+            }
+        }
+    }
+    .booking-form button {
+        display: inline-block;
+        background: transparent;
+        border: 0;
+        color: $color-gray-10;
+        border-radius: 0;
+        margin-top: 20px;
+    }
+}
+#confirm_blooking .modal-content {
+    width: 332px;
+    .modal-body {
+        padding: 50px;
+    }
+    a:hover {
+        color: $color-gray-10;
+    }
+} 
+#confirm_blooking2 .modal-dialog {
+    max-width: 700px;
+    .modal-content {
+        border-radius: 0;
+        .modal-body {
+            @include display-flex();
+            padding: 0;
+            >div {
+                width: 50%;
+                padding: 50px;
+            }
+            .phone-number {
+                display: inline-block;
+                border: 1px solid #ddd;
+                padding: 5px 10px;
+            }
+            .block-right {
+                background: #f2f2f2;
+            }
+            .modal-footer {
+                justify-content: space-between;
+                border: 0;
+                border-radius: 0;
+                padding: 0;
+                button {
+                    padding: 0;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+

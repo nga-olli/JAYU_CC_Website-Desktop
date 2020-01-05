@@ -1,0 +1,203 @@
+.calender-bottom{
+  position: relative;
+  z-index: 1;
+  max-width: 965px;
+  .box-line-01{
+    position: absolute;
+    top: -177px;
+    left: 11px;
+    right: 11px;
+    ul li{
+      height: 177px;
+    }
+  }
+  .box-line-02{
+    ul li{
+      height: 118px;
+    }
+  }
+  ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    li{
+      width: 12.5%;
+      text-align: center;
+
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      &:first-child
+      {
+        justify-content: normal;
+        flex: none;
+        .number{
+          margin: 30px 0 0;
+        }
+        .date{
+          font-size: 17px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  .item-gray{
+    background-color: #f7f7f7;
+  }
+  .item-white{
+    background-color: #fff;
+  }
+  .item-white-light{
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  .item-gray-dark{
+    background-color: $color-gray-2;
+    color: $color-gray-10;
+  }
+  .item-gray-dark-2{
+    background-color: #e0e0e0;
+  }
+  .item-text-red{
+    .date,
+    .number{
+      color: #d12e3a;
+    }
+  }
+  .item-text-purple{
+    .date,
+    .number{
+      color: #8434d5;
+    }
+  }
+  .item{
+    font-weight: 300;
+  }
+  .date{
+    color: #acacac;
+    font-family: $font-family-base;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 14px 0 3px;
+  }
+  .number{
+    font-size: 44px;
+    font-family: $font-family-base;
+    margin-bottom: 3px;
+  }
+  .icon{
+    width: 20px;
+    margin-bottom: 27px;
+  }
+  .team{
+    color: #9d9d9d;
+  }
+  .item-border{
+    border: 1px solid #7d7d7d;
+  }
+  .icon-action{
+    text-align: center;
+    margin: 50px 0 0;
+
+    span{
+      cursor: pointer;
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      background: url("../images/arrow-down.png");
+      background-size: 100%;
+    }
+  }
+}
+.calender-bottom{
+  .box-hidden{
+    display: none;
+  }
+  &.show{
+    .box-hidden{
+      display: block;
+    }
+    .calender-bottom .icon-action span{
+
+    }
+  }
+}
+
+.banner-search{
+  position: relative;
+  margin-bottom: 94px;
+  .search-content{
+    position: relative;
+  }
+}
+
+.search-result{
+  padding: 0 25px 300px;
+  .page-title{
+    font-size: 22px;
+    margin-bottom: 92px;
+  }
+  .title{
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 28px;
+  }
+  .title-small{
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  p{
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 300;
+  }
+  .more{
+    text-align: right;
+    margin-bottom: 50px;
+  }
+  .more-link{
+    color: #3d497f;
+    font-weight: 500;
+    padding-right: 45px;
+    background: url("../images/icon-more.png") no-repeat right center;
+    background-size: 18px;
+    font-size: 18px;
+    &:hover{
+      color: $color-gray-10;
+    }
+  }
+}
+
+//Our brands
+.select-brand {
+  position: relative;
+  padding-right: 20px;
+  &:before {
+    content: '\f107';
+    font-family: FontAwesome;
+    position: absolute;
+    right: 0;
+    top: -5px;
+    font-size: 25px;
+  }
+  &.active {
+    color: $color-gray-10;
+    &::before {
+      content: '\f106';
+      // color: $color-gray-10;
+    }
+  }
+}
+.our-brands {
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #dddddd70;
+  ul {
+    @include display-flex();
+    flex-flow: row wrap;
+    li {
+      width: 14%;
+    }
+  }
+}

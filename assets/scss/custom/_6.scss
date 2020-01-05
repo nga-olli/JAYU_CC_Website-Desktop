@@ -1,0 +1,241 @@
+//Page 6-3
+.main-page.change-password {
+    .form-login .note {
+        font-size: 14px;
+        border: 0;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+}
+//Page 6-4 Sign-up Page
+.main-page.page-sign-up {
+    margin-bottom: 100px;
+    ul.nav {
+        @include display-flex();
+        border-bottom: 0;
+        margin-bottom: 100px;
+        li {
+            text-align: left;
+            width: 25%;
+            a {
+                color: #898989;
+                border: 0;
+                border-bottom: 1px solid $color-gray;
+                border-radius: 0;
+                margin-right: 5px;
+                padding-left: 0;
+                &.active, &:hover {
+                    color: $color-black;
+                    border-color: $color-black;
+                }
+            }
+        }
+    }
+    .block-sign-up-info {
+        margin-bottom: 50px;
+        .info-top {
+            @include display-flex();
+            @include display-flex-between();
+            margin-bottom: 50px;
+            .group-check {
+                @include display-flex();
+            }
+            .form-btn .btn {
+                border: 1px solid #ddd;
+                border-radius: 0;
+                padding: 0 20px;
+                line-height: 35px;
+            }
+        }
+        .info-sign-up-desc {
+            background-color: #f7f8f8;
+            padding: 20px;
+            max-height: 242px;
+            overflow: hidden;
+            overflow-y: scroll;
+        }
+    }
+    .condition-check {
+        @include display-flex();
+        @include display-flex-between();
+        .group-check {
+            @include display-flex();
+        }
+    }
+    .btn-group {
+        @include display-flex();
+        @include display-flex-center();
+        width: 100%;
+        margin-top: 100px;
+        button {
+            max-width: 100px;
+            border-radius: 0;
+            margin: 0 15px;
+            &.btn-case1 {
+                background: $color-black;
+                border: 1px solid $color-black;
+                &:hover {
+                    background: darken($color-black, 10%);
+                    border-color: darken($color-black, 10%);
+                }
+            }
+            &.btn-case2 {
+                background: $color-white;
+                border: 1px solid #ddd;
+                &:hover {
+                    background: $color-gray;
+                    border-color: $color-gray;
+                }
+            }
+        }
+    }
+    
+}
+//Popup Privacy Policy 
+#popup_privacy_policy {
+    .modal-dialog {
+        max-width: 650px;
+    }
+    .modal-content {
+        border-radius: 0;
+        max-height: 400px;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+    .nav-tabs {
+        border: 0; 
+        margin-bottom: 20px;
+        li {
+            width: 80%;
+        }
+        .nav-link {
+            color: #bfbfbf;
+            border: 0;
+            font-size: 1.25rem;
+            &.active {
+                color: #2d2d2d;
+            }
+        }
+        .btn-cancel {
+            color: #bfbfbf;
+            margin-left: 35px;
+        }
+    }
+    .tab-content {
+        padding: 0 20px;
+        font-weight: 300;
+        ul{
+            padding-left: 15px;
+            li {
+                list-style-type:decimal;
+                margin-bottom: 8px;
+            }
+        } 
+        
+    }
+ }
+
+ // Tab 회원실명확인
+ .confirmation-authen {
+     margin-top: 50px;
+     margin-bottom: 50px;
+    .inner {
+        background-color: #2d2d2d;
+        color: $color-white;
+        text-align: center;
+        font-size: 1.25rem;
+        padding: 50px;
+        &.authentication {
+            background-color: #331754;
+        }
+    }
+    
+ }
+ .desc-confirm p {
+    font-weight: 300;
+    &.medium {
+        font-weight: 500;
+    }
+}
+.tab-confirmation {
+    h4.title {
+        margin-bottom: 100px;
+    }
+    .confirmation-form  {
+        margin-bottom: 80px;
+        .inner {
+            width: 56%;
+            margin: auto;
+            border: 1px solid #000;
+            border-radius: 5px;
+            padding: 50px 30px;
+            input.form-control {
+                border-radius: 0;
+            }
+            .block-flex {
+                @include display-flex();
+                align-items: center;
+                span {
+                    @include display-flex();
+                    white-space: nowrap;
+                }
+                .input-group {
+                    @include display-flex();
+                    align-items: center;
+                    input {
+                        max-width: 50px;
+                        max-height: 50px;
+                        margin: 0 4px;
+                        border-radius: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+// Page 6.4 tab3
+.personal-information {
+    div.page-title {
+        font-size: 28px;
+    }
+    .btn-cancel {
+        text-align: right;
+        position: relative;
+        top: -35px;
+    }
+    span.require {
+        color: #d12e3a;
+    }
+}
+.modal#submitRegister {
+    .modal-dialog {
+        max-width: 350px;
+        .modal-body {
+            padding: 30px;
+            .message-desc {
+                padding-bottom: 30px;
+            }
+            .btn-block {
+                text-align: center;
+                button {
+                    border-radius: 0;
+                    background-color: #000;
+                    border-color: #000;
+                    border-radius: 0; 
+                    padding: 0 40px;
+                    line-height: 30px;
+                    margin: 0 5px;
+                    &.btn-close {
+                        background-color: #fff;
+                        border-color: $color-gray;
+                        color: #000;
+                        font-weight: 300;
+                    }
+                    
+                }
+            }
+        }
+        
+    }
+}
